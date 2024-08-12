@@ -1,7 +1,8 @@
-#include <cstdlib> // For std::system
-#include <string>  // For std::string
+#include <cstdlib>
+#include <string>
 
-#pragma once
+#ifndef CLEAR_SCREEN_H_
+#define CLEAR_SCREEN_H_
 
 namespace Console {
   /**
@@ -19,3 +20,4 @@ namespace Console {
   }
 }
 
+# endif // CLEAR_SCREEN_H_

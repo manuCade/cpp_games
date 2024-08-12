@@ -1,9 +1,10 @@
-#include <string>
-#include <random>
-#include <fstream>
-#include <sstream>
-#include <iostream>
 #include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <random>
+#include <sstream>
+#include <string>
+
 #include "system_clear_screen.h"
 
 const int win = true;
@@ -29,7 +30,7 @@ int GetRandomNum(const int min, const int max) {
  * @param input_file_name The name of the input file.
  * @return The number of lines in the file. Returns 0 if the file cannot be opened.
  */
-int GetNumLinesFromFile(const std::string& input_file_name) {
+inline int GetNumLinesFromFile(const std::string& input_file_name) {
     std::ifstream input_file(input_file_name); 
     if (!input_file.is_open()) return 0;
     return std::count(std::istreambuf_iterator<char>(input_file),
