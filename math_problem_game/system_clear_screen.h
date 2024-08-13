@@ -1,8 +1,8 @@
 #include <cstdlib> // For std::system
 #include <string>  // For std::string
 
-#ifndef SYSTEM_CLEAR_H_
-#define SYSTEM_CLEAR_H_
+#ifndef SYSTEM_CLEAR_H
+#define SYSTEM_CLEAR_H
 
 namespace Console {
   /**
@@ -20,4 +20,4 @@ namespace Console {
   }
 }
 
-#endif // SYSTEM_CLEAR_H_
+#endif // SYSTEM_CLEAR_H

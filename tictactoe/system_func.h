@@ -1,7 +1,8 @@
 #include <cstdlib> // For std::system
 #include <string>  // For std::string
 
-#pragma once
+#ifndef SYSTEM_FUNC_H
+#define SYSTEM_FUNC_H
 
 namespace Console {
   /**
@@ -35,3 +36,4 @@ namespace Console {
   }
 }
 
+#endif // SYSTEM_FUNC_H

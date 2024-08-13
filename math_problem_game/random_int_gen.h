@@ -1,7 +1,7 @@
 #include <random>
 
-#ifndef RANDOM_INT_GEN_H_
-#define RANDOM_INT_GEN_H_
+#ifndef RANDOM_INT_GEN_H
+#define RANDOM_INT_GEN_H
 
 // Initialize the random generator once
 std::mt19937 generator(std::random_device{}());
@@ -18,4 +18,4 @@ int GetRandomInt(const int min, const int max) {
   return distribution(generator);
 }
 
-#endif // RANDOM_INT_GEN_H_
+#endif // RANDOM_INT_GEN_H

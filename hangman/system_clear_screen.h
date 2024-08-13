@@ -1,8 +1,8 @@
 #include <cstdlib>
 #include <string>
 
-#ifndef CLEAR_SCREEN_H_
-#define CLEAR_SCREEN_H_
+#ifndef CLEAR_SCREEN_H
+#define CLEAR_SCREEN_H
 
 namespace Console {
   /**
@@ -20,4 +20,4 @@ namespace Console {
   }
 }
 
-# endif // CLEAR_SCREEN_H_
+# endif // CLEAR_SCREEN_H

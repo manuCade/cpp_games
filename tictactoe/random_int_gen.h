@@ -1,6 +1,7 @@
 #include <random>
 
-#pragma once
+#ifndef RANDOM_INT_GEN_H
+#define RANDOM_INT_GEN_H
 
 // Initialize the random generator once
 std::mt19937 generator(std::random_device{}());
@@ -16,3 +17,5 @@ int GetRandomNum(const int min, const int max) {
   std::uniform_int_distribution<int> distribution(min, max);
   return distribution(generator);
 }
+
+#endif // RANDOM_INT_GEN_H
