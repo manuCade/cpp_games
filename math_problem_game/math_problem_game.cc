@@ -9,10 +9,18 @@
 // En este caso, este una simulación del problema donde se puede demostrar la
 // solución óptima en forma de juego.
 
+#include <random>
 #include <vector>
 #include <iostream>
+
 #include "system_clear_screen.h"
-#include "random_int_gen.h"
+
+std::mt19937 generator(std::random_device{}());
+
+int GetRandomInt(const int min, const int max) {
+  std::uniform_int_distribution<int> distribution(min, max);
+  return distribution(generator);
+}
 
 const int rows{10}, cols{rows - 1}, monsters{rows - 2};
 struct Status {
