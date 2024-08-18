@@ -133,6 +133,7 @@ bool Game(const std::string& vocabulary_file_name, int num_attemps) {
   return !win;
 }
 
+// This program only works on Linux
 int main() {
   const int num_attemps{6};
   const std::string vocabulary_file_name{"wordle_vocab.txt"};
